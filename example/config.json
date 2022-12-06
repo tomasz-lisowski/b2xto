@@ -1,0 +1,35 @@
+[
+    {
+        "name": "App 1 (stop after 30 minutes of idling)",
+        "idle": 30,
+        "script": {
+            "start": "runuser - u1 -c 'cd /home/u1 && ./app1 start'",
+            "stop": "runuser - u1 -c 'cd /home/u1 && ./app1 stop'"
+        },
+        "port": {
+            "tcp": [],
+            "udp": [
+                14131,
+                14132,
+                14140
+            ]
+        }
+    },
+    {
+        "name": "App 2 (stop after 80 minutes of idling)",
+        "idle": 80,
+        "script": {
+            "start": "runuser - u2 -c 'cd /home/u2/app2 && ./app2 start'",
+            "stop": "runuser - u2 -c 'cd /home/u2/app2 && ./app2 stop'"
+        },
+        "port": {
+            "tcp": [
+                5840
+            ],
+            "udp": [
+                4223,
+                15343
+            ]
+        }
+    }
+]
