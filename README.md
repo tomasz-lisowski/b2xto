@@ -15,7 +15,7 @@ A lightweight program which monitors packets and runs scripts if certain ports a
 1. Follow steps to install `libpcap` first.
 1. `git clone git@github.com:tomasz-lisowski/b2xto.git`
 2. `cd b2xto`
-3. `zig build -Orelease-safe=true`
+3. `zig build -Doptimize=ReleaseSafe`
 
 ### Install `libpcap`
 1. `git clone git@github.com:the-tcpdump-group/libpcap.git`
